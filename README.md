@@ -159,15 +159,23 @@ Don't forget to git commit as you work! Especially with a lab like this, where
 we're building incrementally.
 
 
+Part 2b: hard mode
+------------------
 
 Note, for advanced mode you can use [raw sockets](http://golang.org/pkg/net/)
-just like you did in lab 7. It's much friendlier in go, with Dial and Listen.
-(ie, listening on a port is a single line of code, instead of the dozens that C
-takes). You'll find that doing HTTP with go is basically exactly the same, just
-takes less code, and you worry less about strings.
+just like you did in lab 7. It's much friendlier in go, with Listen taking only
+a single line, instead of the dozens you had to write in c. You'll find that
+doing HTTP with go is basically exactly the same as in C, just takes less code,
+and you worry less about strings.
 
+One of the neatest things about go are
+[goroutines](https://gobyexample.com/goroutines). If you design your server well
+you can have parallelism through goroutines with a 3 character addition.
 
-Part 3: mdb-lookup in go
+If you're interested, I'd be happy to share my implementation of 
+mdb-lookup-server and http-server using pure sockets in go.
+
+Part 4: mdb-lookup in go
 --------------------------
 
 For this part of the lab you're going to implement the same functionality as in
@@ -187,7 +195,8 @@ At this point you should be all set - the logic is entirely the same as in C,
 but the string manipulation much easier!
 
 Sources
-#######
+=======
+
 * http://golang.org/
 * http://tour.golang.org/
 * http://golang.org/doc/articles/wiki/#tmp_3
