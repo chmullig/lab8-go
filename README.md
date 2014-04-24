@@ -172,18 +172,22 @@ One of the neatest things about go are
 [goroutines](https://gobyexample.com/goroutines). If you design your server well
 you can have parallelism through goroutines with a 3 character addition.
 
-If you're interested, I'd be happy to share my implementation of 
-mdb-lookup-server and http-server using pure sockets in go.
+My implementation of hard mode is available at:
+http://github.com/chmullig/http-server-go
 
 Part 4: mdb-lookup in go
 --------------------------
+(Note: Another fun project is to implement mdb-lookup-server in go, just like
+lab4. A ["solution"](http://github.com/chmullig/mdb-go) is available if you're
+interested).
 
 For this part of the lab you're going to implement the same functionality as in
 lab7. That is, make your go application respond to /mdb-lookup and 
 /mdb-loop?key=search_string URLs in the same way lab 7 did, and also let it 
 server files from your public html directory.
 
-Ideally your server is already serving both static files, and hello world on `/hello`. If not, get that working.
+Ideally your server is already serving both static files, and hello world on
+`/hello`. If not, get that working.
 
 Next, let's connect to the mdb-lookup-server. We can look at the overview of the
 [net package](http://golang.org/pkg/net/#pkg-overview), and use the Dial
