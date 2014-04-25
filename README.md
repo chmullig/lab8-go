@@ -2,6 +2,36 @@ lab8 in go
 ==========
 Based on jrbalsano's lab 8 in Node.js: https://github.com/jrbalsano/lab8
 
+
+Part 0: What is go?
+-------------------
+
+[Go](http://en.wikipedia.org/wiki/Go_\(programming_language\)) is a young
+language created at Google by many of the people involved in creating Unix, most
+famously Rob Pike and Ken Thompson. It is sort of C like syntactically,
+statically typed, and garbage collected. In general it's
+[designed](http://golang.org/doc/faq#history) to work well for the problems
+Google encountered running massive (in every sense) projects in C++ and Java.
+The idea is that it should be easy to write, efficient to maintain, and fast,
+and should support parallelism and an internet connected world at a fundamental
+level.
+
+At a basic level the syntax is pretty easy, but it looks pretty strange coming
+from C, so it's worth going through the basics to get up to speed.
+
+I suggest going through "A Tour of Go" at
+[http://tour.golang.org](http://tour.golang.org). It starts slow, but quickly
+you'll pick up the basic syntax pretty easily, and see the cool stuff you can
+do. You don't need to finish it, but I suggest working through slices (up to
+maybe #38), then jumping ahead (click the go thingie in the top right) to #57-60
+to learn about HTTP. If you want to get fancy, particularly in advanced mode,
+and do some concurrency take a look at #64-66.
+
+For what it's worth, in one long afternoon I went from never looking at go code
+to having working, parallelized implementations of lab4's mdb-lookup-server and
+lab7's http-server with static files and mdb-lookup online interface.
+
+
 Part 1: Install go
 ------------------
 
@@ -78,10 +108,6 @@ $ go run hello.go
 ```
 
 You should see the go program print out "hello, world"! 
-
-If you want to learn more go, I suggest going through "A Tour of Go" at
-http://tour.golang.org . It starts slow, but quickly you'll see some of the cool
-things you can do.
 
 
 Part 2: Serve static files
