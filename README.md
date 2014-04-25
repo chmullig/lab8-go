@@ -232,3 +232,5 @@ Sources
 * http://golang.org/doc/articles/wiki/#tmp_3
 * http://golang.org/pkg/net/#pkg-overview
 
+**Pull requests and github issues are welcome if you have suggestions, clarifications, or encounter problems.**
+
